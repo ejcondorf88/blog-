@@ -63,7 +63,7 @@ const ContactPage = () => {
                     </label>
                     <textarea
                       id="message"
-                      rows="5"
+                      rows={5}
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#db5d2c] focus:border-[#db5d2c] outline-none transition-colors"
                       placeholder="Escribe tu mensaje aquí..."
                     ></textarea>
@@ -95,7 +95,6 @@ const ContactPage = () => {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         strokeLinecap="round"
@@ -112,7 +111,6 @@ const ContactPage = () => {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         strokeLinecap="round"
@@ -129,43 +127,49 @@ const ContactPage = () => {
                     Síguenos
                   </h3>
                   <div className="flex space-x-4">
+                    {/* Facebook */}
                     <a
-                      href="#"
+                      href="https://www.facebook.com/m-lifting"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-600 hover:text-[#db5d2c] transition-colors"
                     >
                       <svg
                         className="w-6 h-6"
                         fill="currentColor"
                         viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.476h-1.26c-1.243 0-1.63.771-1.63 1.563V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z"></path>
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.476h-1.26c-1.243 0-1.63.771-1.63 1.563V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z" />
                       </svg>
                     </a>
+                    {/* Twitter */}
                     <a
-                      href="#"
+                      href="https://twitter.com/m-lifting"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-600 hover:text-[#db5d2c] transition-colors"
                     >
                       <svg
                         className="w-6 h-6"
                         fill="currentColor"
                         viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
                       </svg>
                     </a>
+                    {/* Instagram */}
                     <a
-                      href="#"
+                      href="https://www.instagram.com/m-lifting"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-600 hover:text-[#db5d2c] transition-colors"
                     >
                       <svg
                         className="w-6 h-6"
                         fill="currentColor"
                         viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 2.87 8.14 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.36-1.34-3.36-1.34-.46-1.16-1.12-1.47-1.12-1.47-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.64-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.58 9.58 0 015.01 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.67.92.67 1.85v2.74c0 .26.18.58.69.48A9.96 9.96 0 0022 12c0-5.5-4.46-9.96-9.96-9.96z"></path>
+                        <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.25a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z" />
                       </svg>
                     </a>
                   </div>

@@ -157,7 +157,7 @@ const BlogPage = () => {
                     className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 animate-fadeIn"
                   >
                     <img
-                      src={post.image}
+                      src="public\images\WhatsApp Image 2025-05-16 at 5.59.31 PM.jpeg"
                       alt={post.title}
                       className="w-full h-48 object-cover"
                     />

@@ -23,7 +23,7 @@ const PortfolioPage = () => {
             <div className="w-full md:w-1/2 animate-fadeInLeft">
               <div className="relative overflow-hidden rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <img
-                  src="/images/M-Lifting-app-screenshot.jpg"
+                  src="public\images\WhatsApp Image 2025-05-16 at 5.59.31 PM.jpeg"
                   className="w-full h-full object-cover"
                   alt="M-Lifting App"
                 />
